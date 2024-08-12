@@ -1,0 +1,159 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+}
+/* Medium Weight */
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('./assets/fonts/static/SpaceGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500; /* Adjust based on your font weight */
+    font-style: normal;
+}
+
+/* Bold Weight */
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('./assets/fonts/static/SpaceGrotesk-Bold.ttf') format('truetype');
+    font-weight: 700; /* Adjust based on your font weight */
+    font-style: normal;
+}
+
+/* Variable Font */
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Adjust based on the range of your variable font */
+    font-style: normal;
+}
+
+:root{
+    --color-dark: #151515;
+    --color-green: #4ee1a0;
+    --color-dark-grey: #242424;
+    --color-grey: #d9d9d9;
+    --color-light: #ffffff;
+
+    --font-xl: 80px;
+    --font-l: 48px;
+    --font-m: 24px;
+}
+
+body {
+    font-family: 'SpaceGrotesk', sans-serif;
+    font-size: 18px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.contact,
+footer{
+    background-color: var(--color-dark-grey);
+}
+
+/*
+///////////////utility classes///////////////
+*/
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    gap: 1em;
+}
+
+/*
+////////////////Header///////////////
+*/
+
+header{
+    width: 174px;
+    height: 383px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('./assets/images/image-profile-mobile.webp');
+    background-size: cover;
+}
+
+ul li img{
+    display: block;
+}
+
+header ul,
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rings-svg,
+.circle-svg{
+    position: absolute;
+    z-index: -2;
+}
+.rings-svg{
+    left: 0;
+    top: 130px;
+    transform: translateX(-275px);
+}
+.circle-svg{
+    top: 250px;
+    transform: translateX(170px);
+}
+
+
+/*
+///////////////////Text styles////////////////////
+*/
+
+.hero,
+.skills,
+.contact,
+footer{
+    text-align: center;
+}
+
+h1{
+    font-size: var(--font-l);
+    letter-spacing: -1.5px;
+
+}
+.display-block{
+    display: block;
+}
+
+.green-line{
+    border-bottom: 5px solid var(--color-green);
+}
+
+
+/*
+//////////////////Button(link) styles///////////////
+*/
+.btn{
+    border-bottom: 3px solid var(--color-green);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-light);
+    text-decoration: none;
+    padding-bottom: .5em;
+    display: inline-block;
+}
+
+
+
+/*
+////////////////////Projects section/////////////////
+*/
+.projects-header{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects img{
+    width: 100%;
+}
