@@ -35,7 +35,7 @@
 
     --font-xl: 80px;
     --font-l: 40px;
-    --font-m: 24px;
+    --font-m: 32px;
 }
 
 html, body{
@@ -157,11 +157,38 @@ h1{
     display: inline-block;
 }
 
+/*
+/////////////////////hero section//////////////
+*/
 
+.hero > div{
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+
+/*
+////////////////////////skills///////////////////
+*/
+
+.skills p{
+    font-size: var(--font-m);
+    font-weight: bold;
+}
+
+.skills > div{
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-grey);
+}
 
 /*
 ////////////////////Projects section/////////////////
 */
+
+.projects > div{
+    padding: 80px 0;
+    /* border-bottom: 1px solid var(--color-grey); */
+}
 .projects-header{
     align-items: center;
     justify-content: space-between;
@@ -169,4 +196,42 @@ h1{
 
 .projects img{
     width: 100%;
+}
+
+.projects div .flex{
+    margin-bottom: 2.5em;
+    margin-top: 1em;
+}
+
+.projects .span{
+    margin-top: -10px;
+}
+
+
+
+/*
+////////////////////contact section////////////////
+*/
+.contact > div{
+    padding-top: 60px;
+    padding-bottom: 87px;
+    border-bottom: 1px solid var(--color-grey);
+}
+.contact h2{
+    font-size: var(--font-l);
+    margin-top: 0;
+}
+
+
+/*
+////////////////////////footer//////////////////////
+*/
+footer p{
+    margin-top: 0;
+    padding-top: 39px;
+}
+footer ul{
+    width: 174px;
+    margin: 0 auto;
+    padding: 0 0 60px 0;
 }
