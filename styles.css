@@ -34,8 +34,14 @@
     --color-light: #ffffff;
 
     --font-xl: 80px;
-    --font-l: 48px;
+    --font-l: 40px;
     --font-m: 24px;
+}
+
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -43,8 +49,8 @@ body {
     font-size: 18px;
     background-color: var(--color-dark);
     color: var(--color-light);
-    margin: 0;
-    overflow-x: hidden;
+    /* margin: 0;
+    overflow-x: hidden; */
 }
 
 .contact,
@@ -90,6 +96,10 @@ footer ul{
     justify-content: space-around;
 }
 
+header{
+    position: relative;
+}
+
 .rings-svg,
 .circle-svg{
     position: absolute;
@@ -97,12 +107,15 @@ footer ul{
 }
 .rings-svg{
     left: 0;
-    top: 130px;
-    transform: translateX(-275px);
+    top: 125px;
+    transform: translateX(-437px);
 }
 .circle-svg{
     top: 250px;
-    transform: translateX(170px);
+    right: 0;
+    transform: translateX(165px);
+    /* width: 200px; */
+    /* height: auto; */
 }
 
 
